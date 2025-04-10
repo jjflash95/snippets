@@ -1,0 +1,14 @@
+[package]
+name = "emu-term"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+iced = { version = "0.13.1", features = ["smol", "debug"] }
+libc = "0.2.169"
+nix = { version = "0.29.0", features = ["term", "process"] }
+pty = "0.2.2"
+tokio = { version = "1.43.0", features = ["rt", "full"] }
+async-std = { version = "1", features = ["attributes", "tokio1"] }
+nom = "8.0.0"
+ansi_colours = "1.2.3"
